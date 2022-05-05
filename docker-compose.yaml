@@ -3,14 +3,14 @@ services:
     build:
       context: Frontend
     ports:
-      - "5000:4000"
+      - "5000:3000"
   backend:
     build:
       context: Backend
     volumes:
       - db-data:/backend/data/*
     ports:
-      - "3000:3000"
+      - "4000:3000"
 
 volumes:
   db-data:
