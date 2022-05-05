@@ -1,0 +1,6 @@
+[submodule "Backend/PLBackend"]
+	path = Backend/PLBackend
+	url = https://github.com/PlaylistMedia/PLBackend
+[submodule "Frontend/Playlist"]
+	path = Frontend/Playlist
+	url = https://github.com/PlaylistMedia/Playlist
