@@ -11,6 +11,14 @@ services:
       - db-data:/backend/data/*
     ports:
       - "4000:3000"
+  postgres_db:
+    image: postgres:14.2-alpine
+    environment:
+      POSTGRES_DB: playlist
+      POSTGRES_USER: sysadmin
+      POSTGRES_PASSWORD: sysadmin
+  redis_db:
+    image: redis:7.0.0-alpine
 
 volumes:
   db-data:
